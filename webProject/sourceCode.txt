@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to js-->
+    <script src="index.js" defer></script>
+    <!--Link scroll reveal:  used to create animations or visual effects that make elements appear, transform, or move as users scroll through a webpage. -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--online icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Car Way</title>
+    <!--J query-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- php -->
+</head>
+<body>
+     <!--Navbar begin-->
+     <nav>
+        <a href="index.html" class="brand">
+            <h1>Car<b class="accent">Way</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="collection.html">Cars</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#testimonials">Reviews</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-2" onclick="window.location.href='contact.html'">Get Started</button>
+            <button class="dark-mode-toggle">Dark Mode</button>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+     </nav>
+     <!--Navbar End-->
+     <!-- Hero section-->
+      <div class="hero-page">
+        <div class="hero-headlines">
+            <h1>
+                Easy And Fast Way To <b class="accent">Rent</b> A Car With CarWay.
+            </h1>
+            <p>
+                We provide a diverse selection of rental cars to meet your requirements, whether you're planning a weekend getaway, a vacation, or a business trip. 
+            </p>
+            <button class="btn-2 btn-hero" onclick="window.location.href='contact.html'">Get Started</button>
+            <div class="download-buttons">
+                <img src="Car Rental MetroRide Website Images @nova_designs/img/app_store_img.png" alt="img">
+                <img src="Car Rental MetroRide Website Images @nova_designs/img/google_play_img.png" alt="img">
+            </div>
+        </div>
+        <img src="ourCars/main_1.jpg" class="hero-page-img" alt="img">
+      </div>
+      <!-- Hero section End-->
+    <!--About Start-->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h1>Your Top Choice for Hassle-Free Car Rentals</h1>
+            <p class="about-subline">
+                Discover unmatched convenience with CarWay – renting a car has never been simpler, just a few clicks away!
+            </p>
+            <div class="about-info">
+                <div class="about-info-item">
+                    <hr class="about-hr"/>
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/about-info-item-1.png" alt="img"/>
+                    <h5>Efficiency</h5>
+                    <p>
+                        CarWay excels with its seamless rental process, allowing customers to effortlessly book their preferred vehicles in no time.
+                    </p>
+                </div>
+                <div class="about-info-item">
+                    <hr class="about-hr"/>
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/about-info-item-2.png" alt="img"/>
+                    <h5>Diverse Fleet</h5>
+                    <p>
+                        CarWay offers a wide range of well-maintained vehicles, tailored to meet the diverse needs and preferences of its customers.
+                    </p>
+                </div>
+                <div class="about-info-item">
+                    <hr class="about-hr"/>
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/about-info-item-3.png" alt="img"/>
+                    <h5>Exceptional service</h5>
+                    <p>
+                        CarWay goes beyond simply offering vehicles, dedicating itself to providing outstanding customer service at every step of the journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About End-->
+    <!--Collection section-->
+    <section class="collection" id="collection">
+        <h1>Our Car Collections</h1>
+        <div class="collection-container">
+            <!--Car #1-->
+            <div class="collection-car-item">
+                <img src="ourCars/Hyundai_Verna.jpg" alt="img" id="main-car-img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>500 L.E</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>Giza</h6>
+                        </div>
+                    </div>
+                    <h2>Hyundai Verna</h2>
+                    <button class="btn-2 btn-car">
+                        <p>Book Now!</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+            <!--Car #2-->
+            <div class="collection-car-item">
+                <img src="ourCars/corolla.jpg" alt="img" id="main-car-img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>1100 L.E</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>Cairo</h6>
+                        </div>
+                    </div>
+                    <h2>Toyota Corolla</h2>
+                    <button class="btn-2 btn-car">
+                        <p>Book Now!</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+            <!--Car #3-->
+            <div class="collection-car-item">
+                <img src="ourCars/Porsche_Cayenne_Coupe.jpg" alt="img" id="main-car-img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>3000L.E</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>Zayed</h6>
+                        </div>
+                    </div>
+                    <h2>Porsche Cayenne</h2>
+                    <button class="btn-2 btn-car">
+                        <p>Book Now!</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+            <!--Car #4-->
+            <div class="collection-car-item">
+                <img src="ourCars/Hyundai_Creta.jpg" alt="img" id="main-car-img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>1500 L.E</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>Cairo</h6>
+                        </div>
+                    </div>
+                    <h2>Hyundai Creta</h2>
+                    <button class="btn-2 btn-car">
+                        <p>Book Now!</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+            <!--Car #5-->
+            <div class="collection-car-item">
+                <img src="ourCars/Toyota_Corolla_Cross2023.jpg" alt="img" id="main-car-img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>2500 L.E</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>Giza</h6>
+                        </div>
+                    </div>
+                    <h2>Toyota Corolla Cross</h2>
+                    <button class="btn-2 btn-car">
+                        <p>Book Now!</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+            <!--Car #6-->
+            <div class="collection-car-item">
+                <img src="Car Rental MetroRide Website Images @nova_designs/img/cars/car-3-enlarge.png" alt="img" id="main-car-img">
+                <div class="car-info-container">
+                    <div class="car-info">
+                        <div class="car-price">
+                            <h5>2500 L.E</h5>
+                            <h6>/Day</h6>
+                        </div>
+                        <div class="car-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h6>Zayed</h6>
+                        </div>
+                    </div>
+                    <h2>Toyota 86 - Coupe</h2>
+                    <button class="btn-2 btn-car">
+                        <p>Book Now!</p>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="btn-car btn-herocar" onclick="window.location.href='collection.html'">
+            <p>See All Cars</p>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+    </section>
+    <!--End Collection-->
+    <!--Start Review section-->
+    <section class="review" id="review">
+        <h1>Hear what our clients say</h1>
+        <div class="review-container">
+            <!--Review #1-->
+            <div class="review-item">
+                <p>Renting with <b class="accent">CarWay</b> was incredibly easy! The process, from booking online to car pickup, was seamless and efficient.</p>
+                <div class="review-people">
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/testimonials-1.png" alt="img">
+                    <h5>Sarah H.</h5>
+                </div>
+            </div>
+            <!--Review #2-->
+            <div class="review-item">
+                <p>
+                    I highly recommend <b class="accent">CarWay</b>! Their diverse fleet made it simple for me to pick the perfect car for my weekend.
+                </p>
+                <div class="review-people">
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/testimonials-2.png" alt="img">
+                    <h5>Alex</h5>
+                </div>
+            </div>
+            <!--Review #3-->
+            <div class="review-item">
+                <p>Renting with <b class="accent">CarWay</b> was a hassle-free experience! Everything, from online booking to picking up the car, was smooth and quick.
+                </p>
+                <div class="review-people">
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/testimonials-3.png" alt="img">
+                    <h5>william A.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Review section-->
+    <!--Footer section-->
+    <footer class="index-footer">
+        <div class="callout">
+            <h2>Let’s drive with CarWay Today!</h2>
+            <p class="callout-description">
+                Need assistance or ready to reverse your wheels? Contact us now for
+                prompt service and effortless booking!
+            </p>
+            <div class="callout-buttons">
+                <button class="btn-2 btn-callout" onclick="window.location.href='collection.html'">
+                    <p>Check Our Cars</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='contact.html'">
+                    <p>Book Now!</p>
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="/" class="footer-brand"> Car<b class="accent">Way</b></a>
+            <div class="socials">
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section end-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to js-->
+    <script src="index.js" defer></script>
+    <!--Link scroll reveal:  used to create animations or visual effects that make elements appear, transform, or move as users scroll through a webpage. -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--online icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Car Way</title>
+</head>
+<body>
+     <!--Navbar begin-->
+     <nav>
+        <a href="index.html" class="brand">
+            <h1>Car<b class="accent">Way</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="collection.html">Cars</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#testimonials">Reviews</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-2" onclick="window.location.href='contact.html'">Get Started</button>
+            <button class="dark-mode-toggle">Dark Mode</button>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+     </nav>
+     <!--Navbar End--> 
+     <!--Collection page start-->
+     <section class="collection" id="collection-page">
+        <!--sedans-->
+        <div class="collection-category">
+            <h1>Sedans</h1>
+            <hr/>
+            <div class="collection-container">
+                <!--car #1-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="ourCars/Hyundai_Verna.jpg" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>500 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Giza</h6>
+                            </div>
+                        </div>
+                        <h2>Hyundai Verna</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+                <!--car #2-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="ourCars/Hyundai Accent 2014.jpg" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>1000 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Cairo</h6>
+                            </div>
+                        </div>
+                        <h2>Hyundai Accent</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+                <!--car #3-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="ourCars/corolla.jpg" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>1100 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Cairo</h6>
+                            </div>
+                        </div>
+                        <h2>Toyota Corolla</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--sports Car-->
+        <div class="collection-category">
+            <h1>Sport Cars</h1>
+            <hr/>
+            <div class="collection-container">
+                <!--car #1-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/cars/car-1-enlarge.png" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>2500 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Cairo</h6>
+                            </div>
+                        </div>
+                        <h2>Mercedes-AMG GT R</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+                <!--car #2-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="ourCars/Porsche_Cayenne_Coupe.jpg" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>3000 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Zayed</h6>
+                            </div>
+                        </div>
+                        <h2>Porsche Cayenne</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+                <!--car #3-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/cars/car-11.png" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>4000 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Giza</h6>
+                            </div>
+                        </div>
+                        <h2>Lamborghini Urus</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SUV Car-->
+        <div class="collection-category">
+            <h1>SUVs</h1>
+            <hr/>
+            <div class="collection-container">
+                <!--car #1-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="ourCars/Hyundai_Creta.jpg" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>1500 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Cairo</h6>
+                            </div>
+                        </div>
+                        <h2>Hyundai Creta</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+                <!--car #2-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="ourCars/Nissan juke.jpg" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>2500 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Giza</h6>
+                            </div>
+                        </div>
+                        <h2>Nissan Juke</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+                <!--car #3-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="ourCars/Toyota_Corolla_Cross2023.jpg" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>2500 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Giza</h6>
+                            </div>
+                        </div>
+                        <h2>Toyota Corolla Cross</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Coupes-->
+        <div class="collection-category">
+            <h1>Coupes</h1>
+            <hr/>
+            <div class="collection-container">
+                <!--car #1-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/cars/car-5-enlarge.png" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>2500 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Cairo</h6>
+                            </div>
+                        </div>
+                        <h2>Rolls Royce Dawn</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+                <!--car #2-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/cars/car-3-enlarge.png" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>2500 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Zayed</h6>
+                            </div>
+                        </div>
+                        <h2>Toyota 86 - Coupe</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+                <!--car #3-->
+                <div class="collection-car-item" id="collection-car-item-page">
+                    <img src="Car Rental MetroRide Website Images @nova_designs/img/cars/car-13.png" alt="img" id="collection-page-img"/>
+                    <div class="car-info-container">
+                        <div class="car-info">
+                            <div class="car-price">
+                                <h5>2500 L.E</h5>
+                                <h6>/Day</h6>
+                            </div>
+                            <div class="car-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h6>Cairo</h6>
+                            </div>
+                        </div>
+                        <h2>BMW 428i - F32</h2>
+                        <button class="btn-2 btn-car btn-collection-page" onclick="window.location.href='contact.html'">
+                            Book Now!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!--Collection page End-->
+    <!--Footer section-->
+    <footer class="collection-footer">
+        <div class="callout">
+            <h2>Let’s drive with CarWay Today!</h2>
+            <p class="callout-description">
+                Need assistance or ready to reverse your wheels? Contact us now for
+                prompt service and effortless booking!
+            </p>
+            <div class="callout-buttons">
+                <button class="btn-2 btn-callout" onclick="window.location.href='collection.html'">
+                    <p>Check Our Cars</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='contact.html'">
+                    <p>Book Now!</p>
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="/" class="footer-brand"> Car<b class="accent">Way</b></a>
+            <div class="socials">
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section end-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to js-->
+    <script src="index.js" defer></script>
+    <!--Link scroll reveal:  used to create animations or visual effects that make elements appear, transform, or move as users scroll through a webpage. -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--online icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Car Way</title>
+</head>
+<body>
+     <!--Navbar begin-->
+     <nav>
+        <a href="index.html" class="brand">
+            <h1>Car<b class="accent">Way</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="collection.html">Cars</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#testimonials">Reviews</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-2" onclick="window.location.href='contact.html'">Get Started</button>
+            <button class="dark-mode-toggle">Dark Mode</button>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+     </nav>
+     <!--Navbar End--> 
+     
+     <!--Contact Section-->
+     <section class="contact">
+        <h1>Get in Touch for Your Dream Ride!</h1>
+        <p>
+            Have questions or need assistance? Our team is here to help you find the
+            perfect car for your adventure.
+        </p>
+        <form action="addCustomer.php" method="post">
+            <!-- Access Key -->
+            <input type="hidden" name="access_key" value="4C4C4544-0058-4C10-8050-C4C04F314A33">
+            <div class="car-select">
+                <div class="car-select-item">
+                    <label for="location">Location: </label>
+                    <select name="location" class="car-select-input" id="location" required>
+                        <option value="zayed">Zayed</option>
+                        <option value="october">october</option>
+                        <option value="manyal">Manyal</option>
+                        <option value="zatoon">Zatoon</option>
+                    </select>
+                </div>
+                <div class="car-select-item">
+                    <label for="car-type">Car to rent: </label>
+                    <select name="car-type" class="car-select-input" id="car-type" required>
+                        <option value="Toyota Corolla Cross">Toyota Corolla Cross</option>
+                        <option value="Porsche Cayenne">Porsche Cayenne</option>
+                        <option value="Rolls Royce Dawn">Rolls Royce Dawn</option>
+                        <option value="Hyundai Verna">Hyundai Verna</option>
+                    </select>
+                </div>
+                <div class="car-select-item">
+                    <label for="date">Date: </label>
+                    <input type="date" id="date" name="date" class="car-select-input" required/>
+                </div>
+            </div>
+
+
+            <div class="contact-form">
+                <input type="text" name="id" placeholder="ID" required/>
+                <input type="text" name="name" placeholder="Name" required/>
+                <input type="email" name="email" placeholder="Email" required/>
+                <input type="phone" name="phone" placeholder="Phone" required/>
+                <button type="submit" class="btn-2">Submit</button>
+            </div>
+        </form>
+     </section>
+     <!--Contact section End-->
+
+    <!--Footer section-->
+    <footer class="contact-footer">
+        <div class="callout">
+            <h2>Let’s drive with CarWay Today!</h2>
+            <p class="callout-description">
+                Need assistance or ready to reverse your wheels? Contact us now for
+                prompt service and effortless booking!
+            </p>
+            <div class="callout-buttons">
+                <button class="btn-2 btn-callout" onclick="window.location.href='collection.html'">
+                    <p>Check Our Cars</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='contact.html'">
+                    <p>Book Now!</p>
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="/" class="footer-brand"> Car<b class="accent">Way</b></a>
+            <div class="socials">
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section end-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+// Database connection file: db_connection.php
+
+$host = "localhost"; 
+$db_name = "root"; 
+$username = "root";
+$password = "#12345#"; 
+
+try {
+    // Create PDO connection to the database
+    $pdo = new PDO("mysql:host=$host;dbname=$db_name", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    // If the connection fails, display an error message
+    die("Connection failed: " . $e->getMessage());
+}
+?>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Vehicle</title>
+</head>
+<body>
+    <h1>Add a New Vehicle</h1>
+    <form action="insert_vehicle.php" method="POST">
+        <label>Vehicle ID:</label> <input type="text" name="vehicle_id" required><br>
+        <label>Model:</label> <input type="text" name="model" required><br>
+        <label>Year:</label> <input type="text" name="year" required><br>
+        <label>License Plate:</label> <input type="text" name="license" required><br>
+        <label>Status:</label> <input type="text" name="status" required><br>
+        <button type="submit">Add Vehicle</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<?php
+// Collect input data from the form
+$access_key = $_POST['access_key']; 
+$id = $_POST['id'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$location = $_POST['location'];
+$car_type = $_POST['car-type'];
+$date = $_POST['date'];
+
+// Validate the access key format (UUID)
+if (!preg_match('/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i', $access_key)) {
+    die(json_encode([
+        "success" => false,
+        "message" => "Invalid access key format. Must be a valid UUID."
+    ]));
+}
+
+// Database connection
+$conn = new mysqli('localhost', 'root', '', 'userinfo2');
+
+// Check connection
+if ($conn->connect_error) {
+    die('Connection failed: ' . $conn->connect_error);
+}
+
+// Prepare and bind
+$stmt = $conn->prepare("INSERT INTO registration (id, name, email, phone, location, car_type, rental_date) VALUES (?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("issssss", $id, $name, $email, $phone, $location, $car_type, $date);
+
+// Execute statement
+if ($stmt->execute()) {
+    echo "Registration successfully completed!";
+} else {
+    echo "Error: " . $stmt->error;
+}
+
+// Close statement and connection
+$stmt->close();
+$conn->close();
+?>
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to js-->
+    <script src="index.js" defer></script>
+    <!--Link scroll reveal:  used to create animations or visual effects that make elements appear, transform, or move as users scroll through a webpage. -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--online icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Car Way</title>
+</head>
+<body>
+     <!--Navbar begin-->
+     <nav>
+        <a href="index.html" class="brand">
+            <h1>Car<b class="accent">Way</b></h1>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="collection.html">Cars</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#testimonials">Reviews</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-2" onclick="window.location.href='contact.html'">Get Started</button>
+            <button class="dark-mode-toggle">Dark Mode</button>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+     </nav>
+     <!--Navbar End--> 
+     
+     <!--Contact Section-->
+     <section class="contact">
+        <h1>Get in Touch for Your Dream Ride!</h1>
+        <p>
+            Have questions or need assistance? Our team is here to help you find the
+            perfect car for your adventure.
+        </p>
+        <form action="update_customer.php" method="post">
+            <!-- Access Key -->
+            <input type="hidden" name="access_key" value="4C4C4544-0058-4C10-8050-C4C04F314A33">
+            <div class="car-select">
+                <div class="car-select-item">
+                    <label for="location">Location: </label>
+                    <select name="location" class="car-select-input" id="location" required>
+                        <option value="zayed">Zayed</option>
+                        <option value="october">october</option>
+                        <option value="manyal">Manyal</option>
+                        <option value="zatoon">Zatoon</option>
+                    </select>
+                </div>
+                <div class="car-select-item">
+                    <label for="gender">Gender: </label>
+                    <select name="gender" class="car-select-input" id="car-type" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="car-select-item">
+                    <label for="date">Date: </label>
+                    <input type="date" id="date" name="date" class="car-select-input" required/>
+                </div>
+            </div>
+
+
+            <div class="contact-form">
+                <input type="number" name="id" placeholder="ID" required/>
+                <input type="text" name="name" placeholder="Name" required/>
+                <input type="email" name="email" placeholder="Email" required/>
+                <input type="password" name="password" placeholder="Password" required/>
+                <input type="tel" name="phone" placeholder="Phone" required/>
+                <button type="submit" class="btn-2">Update</button>
+            </div>
+        </form>
+     </section>
+     <!--Contact section End-->
+
+    <!--Footer section-->
+    <footer class="contact-footer">
+        <div class="callout">
+            <h2>Let’s drive with CarWay Today!</h2>
+            <p class="callout-description">
+                Need assistance or ready to reverse your wheels? Contact us now for
+                prompt service and effortless booking!
+            </p>
+            <div class="callout-buttons">
+                <button class="btn-2 btn-callout" onclick="window.location.href='collection.html'">
+                    <p>Check Our Cars</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='contact.html'">
+                    <p>Book Now!</p>
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="/" class="footer-brand"> Car<b class="accent">Way</b></a>
+            <div class="socials">
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section end-->
+</body>
+</html>
